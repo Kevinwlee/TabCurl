@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A2BB7C415B9C098006AEA3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2BB7C315B9C098006AEA3B /* UIKit.framework */; };
+		0A2BB7C615B9C098006AEA3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2BB7C515B9C098006AEA3B /* Foundation.framework */; };
+		0A2BB7C815B9C098006AEA3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2BB7C715B9C098006AEA3B /* CoreGraphics.framework */; };
+		0A2BB7CE15B9C098006AEA3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A2BB7CC15B9C098006AEA3B /* InfoPlist.strings */; };
+		0A2BB7D015B9C098006AEA3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BB7CF15B9C098006AEA3B /* main.m */; };
+		0A2BB7D415B9C098006AEA3B /* QTKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BB7D315B9C098006AEA3B /* QTKAppDelegate.m */; };
+		0A2BB7D715B9C098006AEA3B /* QTKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BB7D615B9C098006AEA3B /* QTKViewController.m */; };
+		0A2BB7DA15B9C098006AEA3B /* QTKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2BB7D815B9C098006AEA3B /* QTKViewController.xib */; };
+		0A2BB7E615B9C116006AEA3B /* QTKBlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BB7E415B9C116006AEA3B /* QTKBlueViewController.m */; };
+		0A2BB7E715B9C116006AEA3B /* QTKBlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2BB7E515B9C116006AEA3B /* QTKBlueViewController.xib */; };
+		0A2BB7EB15B9C134006AEA3B /* QTKGreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BB7E915B9C134006AEA3B /* QTKGreenViewController.m */; };
+		0A2BB7EC15B9C134006AEA3B /* QTKGreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2BB7EA15B9C134006AEA3B /* QTKGreenViewController.xib */; };
+		0A2BB7F015B9C153006AEA3B /* QTKYellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BB7EE15B9C153006AEA3B /* QTKYellowViewController.m */; };
+		0A2BB7F115B9C153006AEA3B /* QTKYellowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2BB7EF15B9C153006AEA3B /* QTKYellowViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A2BB7BF15B9C098006AEA3B /* TabPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2BB7C315B9C098006AEA3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0A2BB7C515B9C098006AEA3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A2BB7C715B9C098006AEA3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0A2BB7CB15B9C098006AEA3B /* TabPrototype-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabPrototype-Info.plist"; sourceTree = "<group>"; };
+		0A2BB7CD15B9C098006AEA3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A2BB7CF15B9C098006AEA3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A2BB7D115B9C098006AEA3B /* TabPrototype-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabPrototype-Prefix.pch"; sourceTree = "<group>"; };
+		0A2BB7D215B9C098006AEA3B /* QTKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTKAppDelegate.h; sourceTree = "<group>"; };
+		0A2BB7D315B9C098006AEA3B /* QTKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTKAppDelegate.m; sourceTree = "<group>"; };
+		0A2BB7D515B9C098006AEA3B /* QTKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTKViewController.h; sourceTree = "<group>"; };
+		0A2BB7D615B9C098006AEA3B /* QTKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTKViewController.m; sourceTree = "<group>"; };
+		0A2BB7D915B9C098006AEA3B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QTKViewController.xib; sourceTree = "<group>"; };
+		0A2BB7E315B9C116006AEA3B /* QTKBlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKBlueViewController.h; sourceTree = "<group>"; };
+		0A2BB7E415B9C116006AEA3B /* QTKBlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKBlueViewController.m; sourceTree = "<group>"; };
+		0A2BB7E515B9C116006AEA3B /* QTKBlueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTKBlueViewController.xib; sourceTree = "<group>"; };
+		0A2BB7E815B9C134006AEA3B /* QTKGreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKGreenViewController.h; sourceTree = "<group>"; };
+		0A2BB7E915B9C134006AEA3B /* QTKGreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKGreenViewController.m; sourceTree = "<group>"; };
+		0A2BB7EA15B9C134006AEA3B /* QTKGreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTKGreenViewController.xib; sourceTree = "<group>"; };
+		0A2BB7ED15B9C153006AEA3B /* QTKYellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKYellowViewController.h; sourceTree = "<group>"; };
+		0A2BB7EE15B9C153006AEA3B /* QTKYellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKYellowViewController.m; sourceTree = "<group>"; };
+		0A2BB7EF15B9C153006AEA3B /* QTKYellowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTKYellowViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A2BB7BC15B9C098006AEA3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2BB7C415B9C098006AEA3B /* UIKit.framework in Frameworks */,
+				0A2BB7C615B9C098006AEA3B /* Foundation.framework in Frameworks */,
+				0A2BB7C815B9C098006AEA3B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A2BB7B415B9C097006AEA3B = {
+			isa = PBXGroup;
+			children = (
+				0A2BB7C915B9C098006AEA3B /* TabPrototype */,
+				0A2BB7CA15B9C098006AEA3B /* Supporting Files */,
+				0A2BB7C215B9C098006AEA3B /* Frameworks */,
+				0A2BB7C015B9C098006AEA3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A2BB7C015B9C098006AEA3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A2BB7BF15B9C098006AEA3B /* TabPrototype.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A2BB7C215B9C098006AEA3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A2BB7C315B9C098006AEA3B /* UIKit.framework */,
+				0A2BB7C515B9C098006AEA3B /* Foundation.framework */,
+				0A2BB7C715B9C098006AEA3B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A2BB7C915B9C098006AEA3B /* TabPrototype */ = {
+			isa = PBXGroup;
+			children = (
+				0A2BB7D215B9C098006AEA3B /* QTKAppDelegate.h */,
+				0A2BB7D315B9C098006AEA3B /* QTKAppDelegate.m */,
+				0A2BB7D515B9C098006AEA3B /* QTKViewController.h */,
+				0A2BB7D615B9C098006AEA3B /* QTKViewController.m */,
+				0A2BB7D815B9C098006AEA3B /* QTKViewController.xib */,
+				0A2BB7E315B9C116006AEA3B /* QTKBlueViewController.h */,
+				0A2BB7E415B9C116006AEA3B /* QTKBlueViewController.m */,
+				0A2BB7E515B9C116006AEA3B /* QTKBlueViewController.xib */,
+				0A2BB7E815B9C134006AEA3B /* QTKGreenViewController.h */,
+				0A2BB7E915B9C134006AEA3B /* QTKGreenViewController.m */,
+				0A2BB7EA15B9C134006AEA3B /* QTKGreenViewController.xib */,
+				0A2BB7ED15B9C153006AEA3B /* QTKYellowViewController.h */,
+				0A2BB7EE15B9C153006AEA3B /* QTKYellowViewController.m */,
+				0A2BB7EF15B9C153006AEA3B /* QTKYellowViewController.xib */,
+			);
+			path = TabPrototype;
+			sourceTree = "<group>";
+		};
+		0A2BB7CA15B9C098006AEA3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A2BB7CB15B9C098006AEA3B /* TabPrototype-Info.plist */,
+				0A2BB7CC15B9C098006AEA3B /* InfoPlist.strings */,
+				0A2BB7CF15B9C098006AEA3B /* main.m */,
+				0A2BB7D115B9C098006AEA3B /* TabPrototype-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = TabPrototype;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A2BB7BE15B9C098006AEA3B /* TabPrototype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A2BB7DD15B9C098006AEA3B /* Build configuration list for PBXNativeTarget "TabPrototype" */;
+			buildPhases = (
+				0A2BB7BB15B9C098006AEA3B /* Sources */,
+				0A2BB7BC15B9C098006AEA3B /* Frameworks */,
+				0A2BB7BD15B9C098006AEA3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabPrototype;
+			productName = TabPrototype;
+			productReference = 0A2BB7BF15B9C098006AEA3B /* TabPrototype.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A2BB7B615B9C097006AEA3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = QTK;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Q Technology Company";
+			};
+			buildConfigurationList = 0A2BB7B915B9C097006AEA3B /* Build configuration list for PBXProject "TabPrototype" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A2BB7B415B9C097006AEA3B;
+			productRefGroup = 0A2BB7C015B9C098006AEA3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A2BB7BE15B9C098006AEA3B /* TabPrototype */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A2BB7BD15B9C098006AEA3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2BB7CE15B9C098006AEA3B /* InfoPlist.strings in Resources */,
+				0A2BB7DA15B9C098006AEA3B /* QTKViewController.xib in Resources */,
+				0A2BB7E715B9C116006AEA3B /* QTKBlueViewController.xib in Resources */,
+				0A2BB7EC15B9C134006AEA3B /* QTKGreenViewController.xib in Resources */,
+				0A2BB7F115B9C153006AEA3B /* QTKYellowViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A2BB7BB15B9C098006AEA3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2BB7D015B9C098006AEA3B /* main.m in Sources */,
+				0A2BB7D415B9C098006AEA3B /* QTKAppDelegate.m in Sources */,
+				0A2BB7D715B9C098006AEA3B /* QTKViewController.m in Sources */,
+				0A2BB7E615B9C116006AEA3B /* QTKBlueViewController.m in Sources */,
+				0A2BB7EB15B9C134006AEA3B /* QTKGreenViewController.m in Sources */,
+				0A2BB7F015B9C153006AEA3B /* QTKYellowViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A2BB7CC15B9C098006AEA3B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A2BB7CD15B9C098006AEA3B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A2BB7D815B9C098006AEA3B /* QTKViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A2BB7D915B9C098006AEA3B /* en */,
+			);
+			name = QTKViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A2BB7DB15B9C098006AEA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		0A2BB7DC15B9C098006AEA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A2BB7DE15B9C098006AEA3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabPrototype/TabPrototype-Prefix.pch";
+				INFOPLIST_FILE = "TabPrototype/TabPrototype-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0A2BB7DF15B9C098006AEA3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TabPrototype/TabPrototype-Prefix.pch";
+				INFOPLIST_FILE = "TabPrototype/TabPrototype-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A2BB7B915B9C097006AEA3B /* Build configuration list for PBXProject "TabPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2BB7DB15B9C098006AEA3B /* Debug */,
+				0A2BB7DC15B9C098006AEA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A2BB7DD15B9C098006AEA3B /* Build configuration list for PBXNativeTarget "TabPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2BB7DE15B9C098006AEA3B /* Debug */,
+				0A2BB7DF15B9C098006AEA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A2BB7B615B9C097006AEA3B /* Project object */;
+}
