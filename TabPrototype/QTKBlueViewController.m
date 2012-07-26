@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -42,8 +43,9 @@
 }
 
 - (IBAction)pusheTapped:(id)sender {
-    QTKYellowViewController *vc = [[QTKYellowViewController alloc] initWithNibName:@"QTKYellowViewController" bundle:nil];
-    vc.view.backgroundColor = [UIColor purpleColor];
+    
+    QTKSubTabViewController *vc = [[QTKSubTabViewController alloc] initWithNibName:@"QTKSubTabViewController" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "QTKYellowViewController.h"
+#import "QTKSubTabViewController.h"
 
 @interface QTKBlueViewController : UIViewController
 - (IBAction)pusheTapped:(id)sender;

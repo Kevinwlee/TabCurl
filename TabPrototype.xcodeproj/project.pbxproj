@@ -21,6 +21,8 @@
 		0A2BB7EC15B9C134006AEA3B /* QTKGreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2BB7EA15B9C134006AEA3B /* QTKGreenViewController.xib */; };
 		0A2BB7F015B9C153006AEA3B /* QTKYellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2BB7EE15B9C153006AEA3B /* QTKYellowViewController.m */; };
 		0A2BB7F115B9C153006AEA3B /* QTKYellowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2BB7EF15B9C153006AEA3B /* QTKYellowViewController.xib */; };
+		FF464BF315C1CF08009A39A6 /* QTKSubTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF464BF115C1CF08009A39A6 /* QTKSubTabViewController.m */; };
+		FF464BF415C1CF08009A39A6 /* QTKSubTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF464BF215C1CF08009A39A6 /* QTKSubTabViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,9 @@
 		0A2BB7ED15B9C153006AEA3B /* QTKYellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKYellowViewController.h; sourceTree = "<group>"; };
 		0A2BB7EE15B9C153006AEA3B /* QTKYellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKYellowViewController.m; sourceTree = "<group>"; };
 		0A2BB7EF15B9C153006AEA3B /* QTKYellowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTKYellowViewController.xib; sourceTree = "<group>"; };
+		FF464BF015C1CF08009A39A6 /* QTKSubTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTKSubTabViewController.h; sourceTree = "<group>"; };
+		FF464BF115C1CF08009A39A6 /* QTKSubTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTKSubTabViewController.m; sourceTree = "<group>"; };
+		FF464BF215C1CF08009A39A6 /* QTKSubTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QTKSubTabViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +98,7 @@
 		0A2BB7C915B9C098006AEA3B /* TabPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				FF464BEB15C1CEC6009A39A6 /* SubTab */,
 				0A2BB7D215B9C098006AEA3B /* QTKAppDelegate.h */,
 				0A2BB7D315B9C098006AEA3B /* QTKAppDelegate.m */,
 				0A2BB7D515B9C098006AEA3B /* QTKViewController.h */,
@@ -121,6 +127,16 @@
 			);
 			name = "Supporting Files";
 			path = TabPrototype;
+			sourceTree = "<group>";
+		};
+		FF464BEB15C1CEC6009A39A6 /* SubTab */ = {
+			isa = PBXGroup;
+			children = (
+				FF464BF015C1CF08009A39A6 /* QTKSubTabViewController.h */,
+				FF464BF115C1CF08009A39A6 /* QTKSubTabViewController.m */,
+				FF464BF215C1CF08009A39A6 /* QTKSubTabViewController.xib */,
+			);
+			name = SubTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +196,7 @@
 				0A2BB7E715B9C116006AEA3B /* QTKBlueViewController.xib in Resources */,
 				0A2BB7EC15B9C134006AEA3B /* QTKGreenViewController.xib in Resources */,
 				0A2BB7F115B9C153006AEA3B /* QTKYellowViewController.xib in Resources */,
+				FF464BF415C1CF08009A39A6 /* QTKSubTabViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +213,7 @@
 				0A2BB7E615B9C116006AEA3B /* QTKBlueViewController.m in Sources */,
 				0A2BB7EB15B9C134006AEA3B /* QTKGreenViewController.m in Sources */,
 				0A2BB7F015B9C153006AEA3B /* QTKYellowViewController.m in Sources */,
+				FF464BF315C1CF08009A39A6 /* QTKSubTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +327,7 @@
 				0A2BB7DF15B9C098006AEA3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
