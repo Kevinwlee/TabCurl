@@ -9,11 +9,13 @@
 #import "QTKSubTabViewController.h"
 @interface QTKSubTabViewController ()
 @property (nonatomic, strong) NSArray *viewControllers;
+@property  NSUInteger selectedIndex;
+
 @end
 
 @implementation QTKSubTabViewController
 @synthesize contentView;
-@synthesize viewControllers;
+@synthesize viewControllers, selectedIndex;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,21 +28,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CGRect contentFrame = self.contentView.frame;
     UIViewController *vcOne = [[UIViewController alloc] init];
-    vcOne.view.frame = contentFrame;
     vcOne.view.backgroundColor = [UIColor colorWithRed:203/255. green:182/255. blue:119/255. alpha:1];
     [self addChildViewController:vcOne];
     [self.contentView addSubview:vcOne.view];
+    vcOne.view.frame = self.contentView.bounds;
+    self.selectedIndex = 0;
+
 
     UIViewController *vcTwo = [[UIViewController alloc] init];
-    vcTwo.view.frame = contentFrame;
-    vcTwo.view.backgroundColor = [UIColor colorWithRed:203/255. green:182/255. blue:119/255. alpha:1];
+    vcTwo.view.backgroundColor = [UIColor colorWithRed:184/255. green:120/255. blue:59/255. alpha:1];
     [self addChildViewController:vcTwo];
 
     UIViewController *vcThree = [[UIViewController alloc] init];
-    vcThree.view.frame = contentFrame;
-    vcThree.view.backgroundColor = [UIColor colorWithRed:203/255. green:182/255. blue:119/255. alpha:1];
+    vcThree.view.backgroundColor = [UIColor colorWithRed:138/255. green:77/255. blue:31/255. alpha:1];
     [self addChildViewController:vcThree];
     
     self.viewControllers = [NSArray arrayWithObjects:vcOne, vcTwo, vcThree, nil];
@@ -63,12 +64,35 @@
 }
 
 - (IBAction)button1Tapped:(id)sender {
-
+    if (self.selectedIndex !=0) {
+        UIViewController *currentViewController = [self.viewControllers objectAtIndex:self.selectedIndex];
+        UIViewController *vc = [self.viewControllers objectAtIndex:0];
+        [self.contentView addSubview:vc.view];
+        self.selectedIndex = 0;
+        vc.view.frame = self.contentView.bounds;
+        [currentViewController.view removeFromSuperview];            
+    }    
 }
 
 - (IBAction)button2Tapped:(id)sender {
+    if (self.selectedIndex !=1) {
+        UIViewController *currentViewController = [self.viewControllers objectAtIndex:self.selectedIndex];
+        UIViewController *vc = [self.viewControllers objectAtIndex:1];
+        [self.contentView addSubview:vc.view];
+        vc.view.frame = self.contentView.bounds;
+        self.selectedIndex = 1;
+        [currentViewController.view removeFromSuperview];            
+    }    
 }
 
 - (IBAction)button3Tapped:(id)sender {
+    if (self.selectedIndex !=2) {
+        UIViewController *currentViewController = [self.viewControllers objectAtIndex:self.selectedIndex];
+        UIViewController *vc = [self.viewControllers objectAtIndex:2];
+        [self.contentView addSubview:vc.view];
+        vc.view.frame = self.contentView.bounds;
+        self.selectedIndex = 2;
+        [currentViewController.view removeFromSuperview];            
+    }    
 }
 @end
