@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QTKGreenViewController : UIViewController
+@interface QTKGreenViewController : UIViewController <UIWebViewDelegate>
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end

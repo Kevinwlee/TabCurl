@@ -10,7 +10,8 @@
 @interface QTKSubTabViewController ()
 @property (nonatomic, strong) NSArray *viewControllers;
 @property  NSUInteger selectedIndex;
-
+- (void)handleSwipeRight;
+- (void)handleSwipeLeft;
 @end
 
 @implementation QTKSubTabViewController
@@ -46,7 +47,14 @@
     
     self.viewControllers = [NSArray arrayWithObjects:vcOne, vcTwo, vcThree, nil];
     
-    // Do any additional setup after loading the view from its nib.
+    UISwipeGestureRecognizer *swipeLeftRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeLeft)];
+    swipeLeftRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+    UISwipeGestureRecognizer *swipeRightRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRight)];
+    swipeRightRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
+    
+    [self.contentView addGestureRecognizer:swipeRightRecognizer];
+    [self.contentView addGestureRecognizer:swipeLeftRecognizer];
+    self.contentView.clipsToBounds = YES;
     
 }
 
@@ -95,4 +103,55 @@
         [currentViewController.view removeFromSuperview];            
     }    
 }
+
+
+- (void)handleSwipeRight {
+    NSLog(@"swipe right");
+    if (self.selectedIndex == 0) {
+        return;
+    }
+    __block UIViewController *currentViewController = [self.viewControllers objectAtIndex:self.selectedIndex];
+    __block CGRect currentFrame = currentViewController.view.frame;
+    __block UIViewController *nextViewController = [self.viewControllers objectAtIndex:self.selectedIndex -1 ];
+    [self.contentView addSubview:nextViewController.view];
+    __block CGRect nextFrame = nextViewController.view.frame;
+    nextFrame.origin.x = -currentFrame.size.width;
+    nextViewController.view.frame = nextFrame;
+    [UIView animateWithDuration:.25 animations:^{
+        currentFrame.origin.x += currentFrame.size.width;
+        currentViewController.view.frame = currentFrame;
+        nextFrame.origin.x += currentFrame.size.width;
+        nextViewController.view.frame = nextFrame;
+    } completion:^(BOOL finished) {
+        [currentViewController.view removeFromSuperview];
+        self.selectedIndex -= 1;        
+    }];
+
+}
+
+- (void)handleSwipeLeft{
+    NSLog(@"swipe left");
+    if (self.selectedIndex == ([self.viewControllers count] -1)) {
+        return;
+    }
+    __block UIViewController *currentViewController = [self.viewControllers objectAtIndex:self.selectedIndex];
+    __block CGRect currentFrame = currentViewController.view.frame;
+    __block UIViewController *nextViewController = [self.viewControllers objectAtIndex:self.selectedIndex +1 ];
+    [self.contentView addSubview:nextViewController.view];
+    __block CGRect nextFrame = nextViewController.view.frame;
+    nextFrame.origin.x = currentFrame.size.width;
+    nextViewController.view.frame = nextFrame;
+    [UIView animateWithDuration:.25 animations:^{
+        currentFrame.origin.x -= currentFrame.size.width;
+        currentViewController.view.frame = currentFrame;
+        nextFrame.origin.x -= currentFrame.size.width;
+        nextViewController.view.frame = nextFrame;
+    } completion:^(BOOL finished) {
+        [currentViewController.view removeFromSuperview];
+        self.selectedIndex += 1;        
+    }];
+    
+
+}
+            
 @end

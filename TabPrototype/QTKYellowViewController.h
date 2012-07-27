@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface QTKYellowViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *trayView;
 
 @end
